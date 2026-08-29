@@ -1,0 +1,14 @@
+=== PID / PPID / ESTADO ===
+    PID    PPID STAT  NI COMMAND
+   9853    8881 S      0 sleep
+=== /proc/9853/status ===
+Name:	sleep
+State:	S (sleeping)
+Pid:	9853
+PPid:	8881
+VmRSS:	    2092 kB
+Threads:	1
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	2
+=== ENCERRANDO ===
+    PID TTY          TIME CMD
