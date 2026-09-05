@@ -1,2 +1,9 @@
 # fatec-iso001-2026-2-squad-LudFamily
-Group from Univ project - Iso001
+Grupo LudFamily.
+Integrantes da Squad:
+- Lucas Eugenio dos Santos
+- Kemilly da Silva
+- Nathan da Silva Santos
+- Raquel Lemos
+- Ludmila Brito
+
