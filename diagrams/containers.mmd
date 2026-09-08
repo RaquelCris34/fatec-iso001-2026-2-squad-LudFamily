@@ -1,0 +1,30 @@
+flowchart LR
+
+    Cliente[Cliente]
+    Admin[Administrador]
+    Operacao[Equipe Operacional]
+
+    subgraph LudCommerce["LudCommerce"]
+
+        API["Aplicação Web / API"]
+
+        Banco[("Banco de Dados")]
+
+        Storage[("Armazenamento de Arquivos")]
+
+    end
+
+    Pagamento["Serviço de Pagamento"]
+    Fornecedor["Fornecedor Parceiro"]
+    Entrega["Correios / Transportadora"]
+
+    Cliente --> API
+    Admin --> API
+    Operacao --> API
+
+    API --> Banco
+    API --> Storage
+
+    API --> Pagamento
+    API --> Fornecedor
+    API --> Entrega
