@@ -1,0 +1,38 @@
+flowchart LR
+
+    Cliente[Cliente]
+    Admin[Administrador]
+    Operacao[Equipe Operacional]
+
+    PagamentoExt[Serviço de Pagamento]
+    FornecedorExt[Fornecedor Parceiro]
+    EntregaExt[Correios / Transportadora]
+
+    subgraph Servidor["Servidor Linux"]
+
+        Proxy["Proxy / Servidor Web"]
+
+        subgraph Aplicacao["Ambiente da LudCommerce"]
+
+            API["Aplicação Web / API"]
+
+            Banco[("Banco de Dados")]
+
+            Storage[("Armazenamento de Arquivos")]
+
+        end
+
+    end
+
+    Cliente --> Proxy
+    Admin --> Proxy
+    Operacao --> Proxy
+
+    Proxy --> API
+
+    API --> Banco
+    API --> Storage
+
+    API --> PagamentoExt
+    API --> FornecedorExt
+    API --> EntregaExt
