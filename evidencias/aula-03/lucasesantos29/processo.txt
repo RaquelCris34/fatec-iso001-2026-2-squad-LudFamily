@@ -1,25 +1,14 @@
-=== PROCESSO ===
-    PID    PPID STAT CMD
-   5857    3799 S    sleep 600
-
-=== PROC STATUS ===
+=== PID / PPID / ESTADO ===
+    PID    PPID STAT  NI COMMAND
+ 144720    1063 S      0 sleep
+=== /proc/144720/status ===
 Name:	sleep
 State:	S (sleeping)
-Pid:	5857
-PPid:	3799
-VmSize:	    6116 kB
-VmRSS:	    2076 kB
+Pid:	144720
+PPid:	1063
+VmRSS:	    2012 kB
 Threads:	1
 voluntary_ctxt_switches:	1
 nonvoluntary_ctxt_switches:	1
-
-=== PROC DIRETORIO ===
-dr-xr-xr-x 9 codespace codespace 0 Sep  2 18:50 /proc/5857
-
-=== PROC STATUS ARQUIVO ===
--r--r--r-- 1 codespace codespace 0 Sep  2 18:50 /proc/5857/status
-
-=== ENCERRAMENTO ===
-Comando executado: kill 5857
-Verificacao apos encerramento:
-    PID STAT CMD
+=== ENCERRANDO ===
+    PID TTY          TIME CMD

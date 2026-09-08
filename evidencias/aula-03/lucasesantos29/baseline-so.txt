@@ -1,6 +1,6 @@
 === USUARIO ===
 codespace
-uid=1000(codespace) gid=1000(codespace) groups=1000(codespace),985(pipx),986(python),987(oryx),988(golang),989(docker),990(sdkman),991(rvm),992(php),993(conda),994(nvs),995(nvm),996(hugo),1001(ssh)
+uid=1000(codespace) gid=1000(codespace) groups=1000(codespace),986(pipx),987(python),988(oryx),989(golang),990(docker),991(sdkman),992(ruby),993(php),994(conda),995(nvm),996(hugo),1001(ssh)
 === KERNEL ===
 6.8.0-1052-azure
 === DISTRIBUICAO ===
@@ -14,21 +14,21 @@ ID_LIKE=debian
 HOME_URL="https://www.ubuntu.com/"
 === MEMORIA ===
                total        used        free      shared  buff/cache   available
-Mem:           7.8Gi       1.9Gi       156Mi        62Mi       6.0Gi       5.8Gi
+Mem:           7.8Gi       2.4Gi       150Mi        65Mi       5.6Gi       5.4Gi
 Swap:             0B          0B          0B
 === DISCO DO PROJETO ===
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop4       32G  9.7G   21G  33% /workspaces
+/dev/loop4       32G   13G   18G  42% /workspaces
 === PROCESSOS ===
     PID    PPID STAT %CPU %MEM COMMAND
-   2194    2171 Sl    5.3  4.2 MainThread
-   2171    2163 Sl    2.2  2.0 MainThread
-   2231    2171 Sl    0.6  1.6 MainThread
-   2764    2231 Sl    0.6  3.0 MainThread
-   2721    2171 Sl    0.3  0.8 MainThread
-    263       1 Sl    0.1  1.1 dockerd
-    576     263 Ssl   0.1  0.6 containerd
-   3280    2194 Sl    0.1  1.0 MainThread
-   3799    2721 Ss    0.0  0.1 bash
-   2241    2171 Sl    0.0  0.7 MainThread
+    504     460 Sl    1.4  4.5 MainThread
+   1050     460 Sl    0.1  0.8 MainThread
+    460     451 Sl    0.0  1.5 MainThread
+     72       1 Sl    0.0  0.3 containerd
+    626     460 Sl    0.0  0.8 MainThread
+    620     460 Sl    0.0  1.4 MainThread
       7       1 S     0.0  0.0 sh
+     73       1 Sl    0.0  0.4 dockerd
+    832     620 Sl    0.0  2.7 MainThread
+  62261     504 Sl    0.0  1.0 MainThread
+   1041     504 Sl    0.0  0.8 MainThread

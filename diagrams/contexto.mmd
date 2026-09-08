@@ -1,0 +1,29 @@
+flowchart LR
+
+    Cliente[Cliente]
+
+    Admin[Administrador]
+
+    Operacao[Equipe Operacional]
+
+    Fornecedor[Fornecedor Parceiro]
+
+    Pagamento[Serviço de Pagamento]
+
+    Entrega[Correios / Transportadora]
+
+    subgraph LudCommerce["LudCommerce"]
+        Sistema["Plataforma de E-commerce"]
+    end
+
+    Cliente -->|"Consulta produtos e realiza pedidos"| Sistema
+    Admin -->|"Gerencia catálogo e estoque"| Sistema
+    Operacao -->|"Acompanha pedidos e operações"| Sistema
+
+    Sistema -->|"Solicita produtos"| Fornecedor
+    Sistema -->|"Processa pagamentos"| Pagamento
+    Sistema -->|"Envia informações de entrega"| Entrega
+
+    Fornecedor -->|"Disponibilidade / confirmação"| Sistema
+    Pagamento -->|"Resultado do pagamento"| Sistema
+    Entrega -->|"Status da entrega"| Sistema
