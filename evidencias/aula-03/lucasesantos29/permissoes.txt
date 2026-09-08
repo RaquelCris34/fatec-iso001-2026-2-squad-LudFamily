@@ -1,10 +1,4 @@
-=== ARQUIVO ===
----------- 1 codespace codespace 30 Sep  2 18:53 laboratorio/lucasesantos29/segredo.txt
-
-=== TENTATIVA DE LEITURA SEM PERMISSAO ===
+=== PERMISSOES ===
+---------- 1 codespace root 32 Sep  8 18:57 laboratorio/lucasesantos29/segredo.txt
+=== TENTATIVA DE LEITURA ===
 cat: laboratorio/lucasesantos29/segredo.txt: Permission denied
-
-=== RESTAURACAO DAS PERMISSOES ===
--rw------- 1 codespace codespace 30 Sep  2 18:53 laboratorio/lucasesantos29/segredo.txt
-Leitura apos chmod 600:
-conteudo reservado da aula 03
