@@ -119,13 +119,21 @@ O backlog organiza as atividades de desenvolvimento da arquitetura e da document
 
 Principais atividades:
 
+Principais atividades:
+
 - definição dos requisitos iniciais;
 - identificação dos componentes;
 - definição da arquitetura inicial;
 - mapeamento de processos e serviços;
+- identificação dos processos críticos;
+- definição de health checks;
+- definição de política de restart e recuperação;
+- classificação de workloads CPU/I/O;
+- definição dos logs mínimos;
 - identificação dos riscos operacionais;
 - criação do diagrama de contexto;
-- criação dos diagramas iniciais de containers e deployment;
+- criação dos diagramas de containers e deployment;
+- criação do diagrama de processos em runtime;
 - organização das evidências.
 
 [Backlog da Sprint 2](backlog/sprint-02.md)
@@ -140,7 +148,7 @@ Principais atividades:
 | [Requisitos](docs/02-requisitos.md) | Requisitos funcionais e não funcionais |
 | [Arquitetura](docs/03-arquitetura.md) | Arquitetura proposta e relação com Sistemas Operacionais |
 | [Decisões técnicas](docs/04-decisoes-tecnicas.md) | Decisões, justificativas e trade-offs |
-| [Operação e observabilidade](docs/05-operacao-observabilidade.md) | Operação, monitoramento, proteção e recuperação |
+| [Processos e serviços](docs/04-processos.md) | Processos, ciclo de vida, falhas, health checks, recuperação e logs |
 
 > Os documentos serão preenchidos e versionados conforme o avanço das Sprints.
 
@@ -153,7 +161,7 @@ Os diagramas serão mantidos em formato editável e poderão possuir versões ex
 - [Diagrama de contexto](diagrams/contexto.mmd)
 - [Diagrama de containers](diagrams/containers.mmd)
 - [Diagrama de deployment](diagrams/deployment.mmd)
-
+- [Diagrama de processos em runtime](diagrams/runtime-processes.mmd)
 ---
 
 ## 9. Evidências
@@ -193,3 +201,4 @@ Podem fazer parte das evidências:
 │   └── sprint-02.md
 ├── evidencias/
 └── laboratorio/
+
