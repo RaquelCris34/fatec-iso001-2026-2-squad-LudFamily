@@ -6,7 +6,7 @@
 
 **Objetivo da Sprint:**
 
-Definir a arquitetura técnica inicial da LudCommerce, identificar seus principais componentes, processos e serviços, e mapear os riscos operacionais relacionados ao funcionamento da plataforma.
+Definir a arquitetura técnica inicial da LudCommerce, identificar seus principais componentes, processos e serviços, mapear os riscos operacionais e estabelecer mecanismos iniciais de monitoramento e recuperação.
 
 ---
 
@@ -272,7 +272,165 @@ Organizar as evidências produzidas durante a Sprint 2 e relacioná-las às deci
 
 ### Evidência esperada
 
+---
+
+## S2-09 — Identificar processos críticos
+
+**Descrição:**
+
+Identificar os processos e serviços críticos da LudCommerce e seus impactos em caso de falha.
+
+**Responsável:** Lucas Eugenio
+
+**Prioridade:** Alta
+
+### Critérios de aceite
+
+- [ ] Pelo menos 4 processos ou serviços críticos identificados.
+- [ ] Responsabilidade de cada processo documentada.
+- [ ] Impacto de uma falha descrito.
+- [ ] Recurso crítico relacionado identificado.
+- [ ] Resultado registrado em `docs/04-processos.md`.
+
+### Conexão com Sistemas Operacionais
+
+- Processos.
+- Serviços.
+- CPU.
+- Memória.
+- I/O.
+- Concorrência.
+- Gerenciamento de recursos.
+
+### Evidência esperada
+
+`docs/04-processos.md`.
+
+---
+
+## S2-10 — Definir health checks
+
+**Descrição:**
+
+Definir mecanismos de verificação de saúde dos processos e serviços críticos da LudCommerce.
+
+**Responsável:** Lucas Eugenio
+
+**Prioridade:** Alta
+
+### Critérios de aceite
+
+- [ ] Health check definido para os componentes relevantes.
+- [ ] Estado saudável definido.
+- [ ] Estado não saudável definido.
+- [ ] Condição de falha identificável.
+- [ ] Ação esperada após detecção documentada.
+
+### Conexão com Sistemas Operacionais
+
+- Monitoramento de processos.
+- Disponibilidade de serviços.
+- Detecção de falhas.
+
+### Evidência esperada
+
+`docs/04-processos.md`.
+
+---
+
+## S2-11 — Definir política de restart
+
+**Descrição:**
+
+Definir como a LudCommerce deve reagir à interrupção de processos e serviços críticos.
+
+**Responsável:** Lucas Eugenio
+
+**Prioridade:** Alta
+
+### Critérios de aceite
+
+- [ ] Situações que justificam restart identificadas.
+- [ ] Estratégia de recuperação definida.
+- [ ] Limite de tentativas considerado.
+- [ ] Risco de loop de reinicialização considerado.
+- [ ] Falhas registradas em logs.
+
+### Conexão com Sistemas Operacionais
+
+- Gerenciamento de processos.
+- Recuperação de serviços.
+- Tratamento de falhas.
+
+### Evidência esperada
+
+`docs/04-processos.md`.
+
+---
+
+## S2-12 — Classificar workloads CPU/I/O
+
+**Descrição:**
+
+Classificar os principais processos conforme sua utilização de CPU, memória, I/O e rede.
+
+**Responsável:** Lucas Eugenio
+
+**Prioridade:** Média
+
+### Critérios de aceite
+
+- [ ] Processos classificados conforme seu perfil de consumo.
+- [ ] Recurso crítico identificado.
+- [ ] Justificativa da classificação registrada.
+- [ ] Relação com métricas do Sistema Operacional documentada.
+
+### Conexão com Sistemas Operacionais
+
+- CPU.
+- Memória.
+- I/O.
+- Rede.
+- Gerenciamento de recursos.
+
+### Evidência esperada
+
+`docs/04-processos.md`.
+
+---
+
+## S2-13 — Registrar logs mínimos
+
+**Descrição:**
+
+Definir os eventos mínimos que devem ser registrados para permitir diagnóstico de falhas e acompanhamento dos processos da LudCommerce.
+
+**Responsável:** Lucas Eugenio
+
+**Prioridade:** Alta
+
+### Critérios de aceite
+
+- [ ] Eventos de inicialização identificados.
+- [ ] Eventos de parada identificados.
+- [ ] Erros e falhas identificados.
+- [ ] Relação entre processo e evento registrada.
+- [ ] Logs considerados como evidência operacional.
+
+### Conexão com Sistemas Operacionais
+
+- Processos.
+- Monitoramento.
+- Diagnóstico de falhas.
+- Observabilidade.
+
+### Evidência esperada
+
+`docs/04-processos.md`.
+
 Diretório `evidencias/sprint-02/`.
+
+
 
 ---
 
