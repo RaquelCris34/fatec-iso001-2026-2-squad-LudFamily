@@ -27,7 +27,13 @@ Durante a Sprint 2 foram produzidos e revisados os seguintes artefatos:
 - criação do diagrama de containers;
 - criação do diagrama de deployment;
 - registro das principais decisões técnicas da arquitetura.
-
+- identificação dos processos críticos;
+- definição conceitual de health checks;
+- definição da política de restart e recuperação;
+- classificação dos workloads em relação a CPU, memória, I/O e rede;
+- definição dos eventos mínimos de logs;
+- criação do diagrama de processos em runtime;
+- registro da revisão da Sprint.
 ---
 
 ## 3. Artefatos relacionados
@@ -64,6 +70,21 @@ Arquivo:
 
 Contém as principais decisões arquiteturais e seus respectivos motivos, impactos e relações com os conceitos de Sistemas Operacionais.
 
+### Processos e serviços
+
+Arquivo:
+
+`docs/04-processos.md`
+
+Contém o inventário dos principais processos e serviços, ciclo de vida, processos críticos, health checks, política de restart, classificação de workloads, logs mínimos e hipóteses de falha.
+
+### Sprint Review
+
+Arquivo:
+
+`evidencias/aula-04/sprint-review.md`
+
+Registra o resultado da Sprint, entregas concluídas, itens pendentes e débitos técnicos.
 ---
 
 ## 4. Diagramas
@@ -105,6 +126,14 @@ Exportação:
 `diagrams/deployment.png`
 
 O diagrama apresenta a distribuição conceitual dos componentes em um ambiente baseado em servidor Linux.
+
+### Diagrama de processos em runtime
+
+Arquivo-fonte:
+
+`diagrams/runtime-processes.mmd`
+
+O diagrama apresenta os principais processos e componentes em execução no servidor Linux e suas dependências e fluxos principais.
 
 ---
 
@@ -172,6 +201,11 @@ A Sprint 2 é considerada concluída quando:
 - as decisões técnicas estiverem registradas;
 - a relação entre a arquitetura e os conceitos de Sistemas Operacionais estiver explícita;
 - os artefatos estiverem versionados no GitHub.
+- os processos críticos e seus impactos em caso de falha estiverem identificados;
+- mecanismos de health check e recuperação estiverem documentados;
+- os eventos mínimos de logs estiverem definidos;
+- o diagrama de processos em runtime estiver disponível;
+- a revisão da Sprint estiver registrada.
 
 ---
 
@@ -201,4 +235,4 @@ Nas próximas Sprints serão aprofundados temas relacionados a:
 
 ## 10. Controle de versão
 
-Esta documentação faz parte do repositório oficial do projeto LudCommerce e deve ser atualizada conforme novas evidências e decisões forem produzidas durante o desenvolvimento do projeto.
+Esta documentação faz parte do repositório oficial do projeto LudCommerce e deve ser atualizada conforme novas entregas, decisões e evidências forem produzidas nas Sprints.
