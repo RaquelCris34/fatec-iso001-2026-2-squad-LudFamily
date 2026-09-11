@@ -1,0 +1,18 @@
+flowchart LR
+
+    CLIENTE["Cliente"]
+
+    subgraph LINUX["Servidor Linux"]
+        PROXY["Proxy / Web"]
+        APP["Web / API"]
+        DB["Banco de Dados"]
+    end
+
+    PAGAMENTO["Pagamento"]
+    ENTREGA["Entrega"]
+    
+    CLIENTE --> PROXY
+    PROXY --> APP
+    APP --> DB
+    APP --> PAGAMENTO
+    APP --> ENTREGA
